@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechSynthesis API Demo</title>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <label for="voiceMessageToSay">Custom message:</label>
+    <input type="text" name="voiceMessageToSay" id="voiceMessageToSay">
+    <button onclick="getAndSayCustomMessage()">Say custom message</button>
+    <br>
+    <button onclick="helloWorld()">Say "Hello world!"</button>
+    <hr>
+    <button onclick="getDeviceVoices()">Get device voices</button>
+    <br>
+    <label for="voiceDropdown">Select a voice:</label>
+    <select name="voiceDropdown" id="voiceDropdown" onchange="showSelectedVoiceDetails()">
+
+    </select>
+    <br>
+    <h3>Voice details</h3>
+    <ul id="selectedVoiceDetails">
+        <li>Name:</li>
+        <li>Language:</li>
+    </ul>
+
+
+</body>
+</html>
